@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+if (hasProperty('buildScan')) {
+    buildScan {
+        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+        termsOfServiceAgree = 'yes'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '4.4.0'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.1.0'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
+    implementation group: 'org.reflections', name: 'reflections', version: '0.10.2'
+
+
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}

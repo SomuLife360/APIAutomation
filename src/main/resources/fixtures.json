@@ -1,0 +1,87 @@
+{
+  "oauth": {
+    "oath_authrization": {
+      "payload": {
+        "email": "rparashar@life360.com",
+        "password": "check@123",
+        "redirectURI": "https://www.life360.com/tile-redirect",
+        "responseType": "code",
+        "clientID": "h1NA2QAH0UKf9rrAackZVZOZsvBcuwfDw6dBrsT51RNNYUVfYlkaKPGeRlSAQfTP",
+        "state": "demostring",
+        "scope": "user%20tile"
+      },
+      "url": "https://life360-dev.tile-api.com",
+      "expectedresult": {
+        "": ""
+      },
+      "method": "postRequest"
+    },
+    "accessToken": {
+      "payload": {
+        "email": "rparashar@life360.com",
+        "password": "check@123",
+        "redirectURI": "https://www.life360.com/tile-redirect",
+        "responseType": "code",
+        "clientID": "h1NA2QAH0UKf9rrAackZVZOZsvBcuwfDw6dBrsT51RNNYUVfYlkaKPGeRlSAQfTP",
+        "state": "demostring",
+        "scope": "user%20tile"
+      },
+      "url": "https://life360-dev.tile-api.com",
+      "expectedresult": {
+        "": ""
+      },
+      "method": "postRequest"
+    },
+    "accessToken_refresh": {
+      "payload": {
+        "email": "rparashar@life360.com",
+        "password": "check@123",
+        "redirectURI": "https://www.life360.com/tile-redirect",
+        "responseType": "code",
+        "clientID": "h1NA2QAH0UKf9rrAackZVZOZsvBcuwfDw6dBrsT51RNNYUVfYlkaKPGeRlSAQfTP",
+        "state": "demostring",
+        "scope": "user%20tile"
+      },
+      "url": "https://life360-dev.tile-api.com",
+      "expectedresult": {
+        "": ""
+      },
+      "method": "postRequest"
+    }
+  },
+  "users": {
+    "get_user": {
+      "payload": {},
+      "url": "https://develop.life360.com/v3/users/lookup",
+      "expectedresult": {
+        "": ""
+      },
+      "method": "getRequestForm"
+    },
+    "get_user_tiles": {
+      "payload": {},
+      "url": "https://life360-dev.tile-api.com",
+      "expectedresult": {
+        "": ""
+      },
+      "method": "getRequest"
+    }
+  },
+  "tiles": {
+    "get_tiles": {
+      "payload": {},
+      "url": "https://life360-dev.tile-api.com",
+      "expectedresult": {
+        "": ""
+      },
+      "method": "getRequest"
+    }
+  },"GET_TILES_NO_END_POINT": {
+  "payload": {},
+  "url": "https://life360-dev.tile-api.com",
+  "expectedresult": {
+    "": ""
+  },
+  "method": "getRequestURI"
+}
+}
